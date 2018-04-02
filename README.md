@@ -15,13 +15,9 @@ A comma-separated values (CSV) file is a delimited text file that stores tabular
 
 **Requirements**
 
-* Produce a command line application which will take a single column width value, a Comma-Separated Value (CSV) filepath, and an output filepath, then write out the values from that file into a fixed length format text file where each column is the length of the given width value.
+* Produce a command line application which will take a Comma-Separated Value (CSV) filepath, and an output filepath, then write out the values from that file into a fixed length format text file where each column is 9 characters long.
 
-`$ yourappname 4 /path/to/input.csv /path/to/output/file`
-
-**Bonus**
-
-* If no column width value is provided, default to using the greatest field value length for each column such that output values are not truncated.  
+`$ yourappname /path/to/input.csv /path/to/output/file`
 
 **Resources**
 
