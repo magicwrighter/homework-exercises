@@ -139,7 +139,7 @@ Using The Dog API and either [create-react-app](https://github.com/facebook/crea
 
 ### Visual Example
 
-<img src="images/great-dogsby.gif" alt="Visual example" style="width: 400px !important;"/>
+![Visual example](images/great-dogsby.gif)
 
 ### Resources
 
