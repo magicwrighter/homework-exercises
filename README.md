@@ -6,7 +6,7 @@ For exercises that require working with files, you can find example inputs and o
 
 ## ACH Toggle
 
-ACH is a fixed width file format. Each record is 94 characters long. In order to improve human readability it can be helpful to put line breaks at the end of each record. Make an application that can toggle (insert of remove) line endings in an ACH file.
+ACH is a fixed width file format. Each record is 94 characters long. In order to improve human readability it can be helpful to put line breaks at the end of each record. Make an application that can toggle (insert or remove) line endings in an ACH file.
 
 ### Requirements
 
@@ -31,14 +31,14 @@ Make a simple command line interface to interact with The Dog API
 
 ### Bonus
 
-* Format output for breed lists in a way that is prettier than json. Maybe one breed/sub-breed per line.
+* Format output for breed lists in a way that is prettier than JSON. Maybe one breed/sub-breed per line.
 * There is a command that will prompt the user to enter the name of a breed and then request and print a list of that breed's sub-breeds
 * There is a command that will prompt the user to enter the name of a breed and download and save an image of that breed
 * Whenever downloading images, open the image in the user's preferred image viewer in addition to saving it
 
 ### Resources
 
-* The [Json.NET](https://www.newtonsoft.com/json) library may be useful for parsing json responses if you choose to use C#/.NET
+* The [Json.NET](https://www.newtonsoft.com/json) library may be useful for parsing JSON responses if you choose to use C#/.NET
 * [The Dog API](https://dog.ceo/dog-api/)
 
 
@@ -71,7 +71,9 @@ A comma-separated values (CSV) file is a delimited text file that stores tabular
 
 ### Example
 
-`$ yourappname /path/to/input.csv /path/to/output/file`
+```
+$ yourappname /path/to/input.csv /path/to/output/file
+```
 
 ![Example CSV to Fixed Width](images/csv-to-fixed-width.png)
 
@@ -118,9 +120,6 @@ AccountNumber,LoanId,Name,AmountDue,DateDue,SocialLastFour
   * InputBankFile.csv: an example file contain account balances
   * OutputBankFile.csv: the result of running the program with InputBankFile.csv
 
-
-
-
 ## The Great Dogsby
 
 Using The Dog API and either [create-react-app](https://github.com/facebook/create-react-app) or [gatsby](https://www.gatsbyjs.org/), make a simple React application with the following:
@@ -164,7 +163,7 @@ Make a clock component using React that shows the current date and time.
 
 ## Web Scraping
 
-XKCD is a popular comic with a fairly consistent webpage layout, which makes it a good candidate for an application that traverses their comic archive. If you wanted to index all of the existing comics manually, it would take ages, but with some way to read the html response to find the information we care about, along with the "next" button's link, we should be able to catalog them pretty quickly.
+XKCD is a popular comic with a fairly consistent web page layout, which makes it a good candidate for an application that traverses their comic archive. If you wanted to index all of the existing comics manually, it would take ages, but with some way to read the HTML response to find the information we care about, along with the "next" button's link, we should be able to catalog them pretty quickly.
 
 ### Requirements
 
