@@ -135,6 +135,100 @@ AccountNumber,LoanId,Name,AmountDue,DateDue,SocialLastFour
   * InputBankFile.csv: an example file contain account balances
   * OutputBankFile.csv: the result of running the program with InputBankFile.csv
 
+## Fix Homoglyphs
+
+Sometimes we receive ACH files (and other file types) that include invalid characters that look like regular character from the English alphabet. Create an application that will replace these invalid, letter-like, characters with the nearest alphabet character.
+
+### Requirements
+
+Create a simple application that will take a file, search it for any homoglyph characters, replace the characters with their alphabet character equivalent then output the fixed data to another file.
+
+- The application should take in two arguments from the command line
+  - 1st argument: The input file
+  - 2nd argument: The output file. This argument should be optional and a reasonable default output file should be used if an output file path is not provided.
+- The application should be able to handle converting all of the characters described in the _Characters to Convert_ section.
+- The file `names.txt` contains some names that include homoglyph characters.
+  - The file `names-result.txt` contains the expected output from your application.
+
+_Refer to the `fix-homoglyphs` directory in this repository for the test file and result file._
+
+#### Characters to Convert
+
+| Homoglyph | Alphabet Character |
+|-----------|--------------------|
+| Ä         | A                  |
+| Å         | A                  |
+| Á         | A                  |
+| Â         | A                  |
+| À         | A                  |
+| Ã         | A                  |
+| â         | a                  |
+| ä         | a                  |
+| à         | a                  |
+| å         | a                  |
+| á         | a                  |
+| ã         | a                  |
+| ß         | B                  |
+| þ         | b                  |
+| Þ         | b                  |
+| Ç         | C                  |
+| ç         | c                  |
+| Ð         | D                  |
+| É         | E                  |
+| Ê         | E                  |
+| Ë         | E                  |
+| È         | E                  |
+| é         | e                  |
+| ê         | e                  |
+| ë         | e                  |
+| è         | e                  |
+| ƒ         | f                  |
+| Í         | I                  |
+| Î         | I                  |
+| Ï         | I                  |
+| ï         | i                  |
+| î         | i                  |
+| ì         | i                  |
+| í         | i                  |
+| ı         | i                  |
+| Ñ         | N                  |
+| ñ         | n                  |
+| Ö         | O                  |
+| Ó         | O                  |
+| Ô         | O                  |
+| Ò         | O                  |
+| Õ         | O                  |
+| ô         | o                  |
+| ö         | o                  |
+| ò         | o                  |
+| ó         | o                  |
+| ø         | o                  |
+| ð         | o                  |
+| õ         | o                  |
+| Ü         | U                  |
+| Ú         | U                  |
+| Û         | U                  |
+| Ù         | U                  |
+| ü         | u                  |
+| û         | u                  |
+| ù         | u                  |
+| ú         | u                  |
+| µ         | u                  |
+| Ý         | Y                  |
+| ÿ         | y                  |
+| ý         | y                  |
+| Ø         | 0                  |
+
+#### Hints
+
+- Use the table in the _Characters to Convert_ section to save time having to locate which characters are considered homoglyphs.
+- Use a map (or dictionary, depending on your choice of language) to store the conversion information. Alternatively, a switch statement may be used instead.
+
+### Example
+
+If the character "ü" appears it should be converted to the character "u".
+
+
 ## The Great Dogsby
 
 Using The Dog API and either [create-react-app](https://github.com/facebook/create-react-app) or [gatsby](https://www.gatsbyjs.org/), make a simple React application with the following:
