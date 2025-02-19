@@ -34,29 +34,6 @@ ACH is a fixed width file format. Each record is 94 characters long. In order to
   * add_line_breaks.ach: example file that does not contain any line breaks
   * remove_line_breaks.ach: example file that contains line breaks
 
-
-## Consume A Basic Web API
-
-Make a simple command line interface to interact with The Dog API
-
-### Requirements
-
-* There is a command to request and print all dog breeds to the console
-* There is a command to download and save a random dog image, which then tells the user where the image was saved
-
-### Bonus
-
-* Format output for breed lists in a way that is prettier than JSON. Maybe one breed/sub-breed per line.
-* There is a command that will prompt the user to enter the name of a breed and then request and print a list of that breed's sub-breeds
-* There is a command that will prompt the user to enter the name of a breed and download and save an image of that breed
-* Whenever downloading images, open the image in the user's preferred image viewer in addition to saving it
-
-### Resources
-
-* The [Json.NET](https://www.newtonsoft.com/json) library may be useful for parsing JSON responses if you choose to use C#/.NET
-* [The Dog API](https://dog.ceo/dog-api/)
-
-
 ## CSV Duplicate Record Remover
 
 A comma-separated values (CSV) file is a delimited text file that stores tabular data using the comma (',') character to separate plain text column (field) values, with each data record (row) separated by new line characters. This exercise entails making a console application that reads in a CSV file, finds duplicate entries, and writes the unique entries to a new CSV file.
@@ -227,48 +204,6 @@ _Refer to the `fix-homoglyphs` directory in this repository for the test file an
 ### Example
 
 If the character "ü" appears it should be converted to the character "u".
-
-
-## The Great Dogsby
-
-Using The Dog API and either [create-react-app](https://github.com/facebook/create-react-app) or [gatsby](https://www.gatsbyjs.org/), make a simple React application with the following:
-
-### Requirements
-
-* A random image of a dog is displayed when the page is loaded
-* A button that when clicked replaces the current image with a new dog image without reloading the page
-
-### Bonus
-
-* Center The Image and the button using CSS Grid
-* Using CSS, give the button a flat color
-* Using CSS, make every image take up the same amount of vertical space (the button shouldn't jump around as you request more dogs)
-* Use Semantic HTML when structuring your page
-
-### Visual Example
-
-![Visual example](images/great-dogsby.gif)
-
-### Resources
-
-* https://dog.ceo/dog-api/
-* https://github.com/facebook/create-react-app
-* https://www.gatsbyjs.org/
-
-
-## ReactJs Clock
-
-Make a clock component using React that shows the current date and time.
-
-### Requirements
-
-* The time should be stored in the component's state
-
-### Bonus
-
-* Put a picture of a calendar next to the date, and a picture of a clock next to the time
-* Allow the user to switch between 12-hour and 24-hour time
-
 
 ## Web Scraping
 
